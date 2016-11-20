@@ -10,8 +10,8 @@ namespace Challenge.Domain.Tests
     public class MarvelApiDomainTests
     {
         //GLOBAL KEYS
-        private const string PRIVATE_KEY = "4b3bb065469cce132e2c06e152df70a487185e6f";
-        private const string PUBLIC_KEY = "9d3953a1a0bb0e8051846b1d9569e8cf";
+        private const string PRIVATE_KEY = "aqui virá sua chave privada da marvel comics api";
+        private const string PUBLIC_KEY = "aqui virá sua chave pública da marvel comics api";
 
         //BASE URL
         private const string MARVEL_API_BASE_URL = "http://gateway.marvel.com:80/";
