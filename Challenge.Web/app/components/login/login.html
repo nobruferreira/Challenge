@@ -1,0 +1,88 @@
+﻿<div ng-include="'app/components/login/partial-views/headbar.html'"> </div>
+
+<div class="col-md-12">
+    <div class="col-md-offset-3 col-md-6 container-login col-md-offset-3 animated zoomIn">
+
+        <div class="text-center container-access-data">
+            <h4 class="access-data">
+                <strong> ACCESS DATA </strong>
+            </h4>
+        </div>
+
+        <br /> <br />
+
+        <form name="loginForm" ng-submit="vm.submit()" novalidate>
+
+            <div class="form-group" ng-class="{ 'has-error' : loginForm.privateKey.$invalid && loginForm.privateKey.$dirty }">
+
+                <div class="input-group margin-bottom-sm">
+                    <span class="input-group-addon icon-input">
+                        <i class="fa fa-key fa-fw"></i>
+                    </span>
+
+                    <div class="col-md-offset-1 col-md-11">
+                        <input ng-model="vm.login.privateKey"
+                               type="text"
+                               class="form-control"
+                               id="privateKey"
+                               name="privateKey"
+                               placeholder="PRIVATE_KEY"
+                               required />
+                    </div>
+                </div>
+
+                <div class="col-md-offset-2 col-md-10 container-alert-error">
+                    <div ng-messages="loginForm.privateKey.$error" ng-if="loginForm.privateKey.$dirty" class="alert-error" role="alert">
+                        <div ng-message="required"> Please fill the field PRIVATE_KEY with a valid key. </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-group" ng-class="{ 'has-error' : loginForm.publicKey.$invalid && loginForm.publicKey.$dirty }">
+
+                <div class="input-group">
+                    <span class="input-group-addon icon-input">
+                        <i class="fa fa-key fa-fw"></i>
+                    </span>
+
+                    <div class="col-md-offset-1 col-md-11 col-md-offset-1">
+                        <input ng-model="vm.login.publicKey"
+                               type="text"
+                               class="form-control"
+                               id="publicKey"
+                               name="publicKey"
+                               placeholder="PUBLIC_KEY"
+                               required />
+                    </div>
+
+                </div>
+
+                <div class="col-md-offset-2 col-md-10 container-alert-error">
+                    <div ng-messages="loginForm.publicKey.$error" ng-if="loginForm.publicKey.$dirty" class="alert-error" role="alert">
+                        <div ng-message="required"> Please fill the field PUBLIC_KEY with a valid key. </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <br /> <br />
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-default btn-block" ng-disabled="loginForm.$invalid || !loginForm.$dirty">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i> &nbsp; SIGN IN
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+</div>
+
+<div class="col-md-12 text-center">
+    <div class="col-md-12 container-pre-loader" ng-show="vm.preloader">
+        <img src="app/assets/images/pre-loader.gif" title="Carregando..." alt="Carregando..."/>
+    </div>
+</div>
+
+<div ng-include="'app/components/shared/partial-views/footer.html'"> </div>

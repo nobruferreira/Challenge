@@ -1,0 +1,81 @@
+﻿<div ng-include="'app/components/shared/partial-views/headbar.html'"> </div>
+
+<div class="col-md-12 text-center">
+    <div class="row">
+        <h3> 
+            <strong> 
+                <u> CHARACTERS </u> 
+            </strong> 
+        </h3>
+    </div>
+</div>
+
+<div class="col-md-12 margin-top-40">
+    <div class="row" ng-show="vm.showSearch">
+        <div class="col-md-offset-3 col-md-6 col-md-offset-3">
+            <form name="searchForm" novalidate>
+                <div class="form-group">
+                    <input type="text"
+                           class="form-control text-center"
+                           ng-model="filterSearchedName"
+                           placeholder="Search by name..." />
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-12">
+    <div class="row">
+        <div class="container container-character" ng-if="vm.listCharacter.length > 0">
+
+            <table class="table table-striped">
+                
+                <thead>
+                    <tr>
+                        <td class="text-center">
+                            <span class="title-grid">
+                                <strong> NAME </strong>
+                            </span>
+                        </td>
+                        <td class="text-center">
+                            <span class="title-grid">
+                                <strong> DESCRIPTION </strong>
+                            </span>
+                        </td>
+                        <td class="text-center">
+                            <span class="title-grid">
+                                <strong> LAST UPDATE </strong>
+                            </span>
+                        </td>
+                        <td class="text-center">
+                            <span class="title-grid">
+                                <strong> DETAILS </strong>
+                            </span>
+                        </td>
+                    </tr> 
+                </thead>
+                
+                <tbody>
+                    <tr class="text-center" ng-repeat="character in vm.listCharacter | filter: { name:filterSearchedName }">
+                        <td class="text-center col-md-3" ng-model="name"> {{ character.name }} </td>
+                        <td class="text-center col-md-6" ng-model="description"> {{ character.description }}</td>
+                        <td class="text-center col-md-2" ng-model="modified"> {{ character.modified | date: 'dd/MM/yyyy - HH:mm' }} </td>
+                        <td class="text-center col-md-1" ng-model="modified"> <a href="" class="btn btn-danger" ng-click="vm.openModal(character.id, 'lg', character.thumbnail.path, character.thumbnail.extension, character.name, character.description)"> Look </a> </td>
+                    </tr>
+                </tbody>        
+
+            </table>
+
+            <br />
+
+            <div class="col-md-12 text-center">
+                <ul uib-pagination total-items="vm.totalCharacters" ng-model="vm.currentPage" ng-click="vm.setPage(vm.currentPage)" max-size="vm.maxSize" class="pagination-md" boundary-link-numbers="true" rotate="false"></ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div ng-include="'app/components/shared/partial-views/footer.html'"> </div>

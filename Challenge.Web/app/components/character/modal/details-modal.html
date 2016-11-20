@@ -1,0 +1,94 @@
+﻿<div ng-controller="CharacterCtrl">
+
+    <div class="modal-header">
+
+        <div class="row">
+
+            <div class="col-md-12 cursor-pointer">
+                <i class="fa fa-times fa-2x cursor black pull-right" title="Fechar" ng-click="cancel()"> </i>
+            </div>
+
+            <br />
+
+            <div class="col-md-12">
+                <h3 class="black text-center">
+                    <strong>
+                        <u> DETAILS </u>
+                    </strong>
+                </h3>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="modal-body">
+        
+        <div class="row">
+
+            <div class="col-sm-12 col-md-12">
+                <div class="col-sm-12 col-md-5 text-center margin-bottom-30">
+                    <img ng-src="{{ vm.thumbnailComicsByCharacterId }}" class="img-rounded" alt="Photo Character" title="Photo Character" width="100%" height="330" />
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <div class="col-sm-12 col-md-12">
+                        <h4> <strong> Name: </strong> </h4>
+                        <span> {{ vm.nameComicsByCharacterId }} </span>
+                    </div>
+                    <div class="col-sm-12 col-md-12 margin-top-10 margin-bottom-30 text-align-justify">
+                        <h4> <strong> Description: </strong> </h4>
+                        <span> {{ vm.descriptionComicsByCharacterId }} </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12">
+                <h3 class="black text-center">
+                    <strong>
+                        <u> COMICS </u>
+                    </strong>
+                </h3>
+            </div>
+
+            <div ng-if="vm.listComicsByCharacterId.data.results.length > 0">
+                <div class="col-sm-12 col-md-12 margin-top-30" ng-repeat="comics in vm.listComicsByCharacterId.data.results">
+
+                    <div class="col-sm-12 col-md-4 text-center margin-bottom-30">
+                        <img ng-src="{{ (comics.thumbnail.path + '.' + comics.thumbnail.extension) }}" class="img-rounded" alt="Photo Comic" title="Photo Comic" width="100%" height="300" />
+                    </div>
+
+                    <div class="col-sm-12 col-md-8">
+                        <div class="col-sm-12 col-md-12">
+                            <div class="col-sm-12 col-md-6">
+                                <h4> <strong> Title: </strong> </h4>
+                                <span> {{ comics.title }} </span>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <h4> <strong> Issue Number: </strong> </h4>
+                                <span> {{ comics.issueNumber }} </span>
+                            </div>
+                            <div class="col-sm-12 col-md-12 margin-top-10 margin-bottom-30 text-align-justify">
+                                <h4> <strong> Description of the story: </strong> </h4>
+                                <span ng-bind-html="comics.description | parseToHtml">  </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12">
+                        <hr />
+                    </div>
+
+                </div>
+            </div>
+
+            <div ng-if="vm.listComicsByCharacterId.data.results.length == 0">
+                <div class="col-sm-12 col-md-12 container-comics text-center">
+                    <h4> <strong> No comics to show at the moment. </strong> </h4>
+                </div>
+            </div>
+          
+        </div>
+        
+    </div>
+
+</div>
