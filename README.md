@@ -26,7 +26,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 ## PUBLICAÇÃO
 
-Aplicação publicada no Azure, e disponível a partir dos seguintes links:
+Aplicação publicada na Amazon, e disponível a partir dos seguintes links:
 
 - WEB:
 - API: 
