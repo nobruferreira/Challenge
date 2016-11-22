@@ -23,7 +23,8 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 	
 	Veja este vídeo caso tenha alguma dúvida na instalacao: https://www.youtube.com/watch?v=Pdapt2PFidE
 	
-- Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo** redis.windows.exe** 
+- Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo
+**redis.windows.exe** 
 
 	Na sessao **####### SNAPSHOTTING #######** 
 	
