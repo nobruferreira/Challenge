@@ -19,6 +19,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 - Uso do Banco de Dados Redis(NoSql), que possui a responsabilidade do armazenamento em cache dos dados em memória dentro da aplicação. Contudo para que seja possível executar esta aplicacao em uma máquina local, será necessário realizar a instalacao do Redis, descompactar seu pacote e inicializar os aplicativos mencionados abaixo partir de qualquer pasta dentro do sitema operacional que neste caso está sendo utilizado o Windows.
 	
 	**redis-server.exe** (funcionará em memória dentro do Windows).
+	
 	**redis-cli.exe**
 	
 	Veja este vídeo caso tenha alguma dúvida na instalacao: https://www.youtube.com/watch?v=Pdapt2PFidE
