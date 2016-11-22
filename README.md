@@ -25,7 +25,9 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 	
 - Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo ** redis.windows.exe ** 
 
-	** Na sessao ####### SNAPSHOTTING ######### ** acrescentar o caracter **#** antes das palavras ** save **.
+	** Na sessao ####### SNAPSHOTTING ####### ** 
+	
+	acrescentar o caracter **#** antes das palavras ** save **.
 	
 	** #save 900 1 **
 	** #save 300 10 **
