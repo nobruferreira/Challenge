@@ -29,7 +29,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 	Na sessao **####### SNAPSHOTTING #######** 
 	
-	acrescentar o caracter **#** nas seguintes linhas antes da palavras **save**.
+	acrescentar o caracter **#** nas seguintes linhas antes da palavra **save**.
 	
 	**#save 900 1**
 	
