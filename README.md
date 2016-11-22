@@ -18,16 +18,16 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 - Uso do Banco de Dados Redis(NoSql), que possui a responsabilidade do armazenamento em cache dos dados em memória dentro da aplicação. Contudo para que seja possível executar esta aplicacao em uma máquina local, será necessário realizar a instalacao do Redis, descompactar seu pacote e inicializar os aplicativos mencionados abaixo partir de qualquer pasta dentro do sitema operacional que neste caso está sendo utilizado o Windows.
 	
-	** redis-server.exe ** (funcionará em memória dentro do Windows).
-	** redis-cli.exe **
+	**redis-server.exe** (funcionará em memória dentro do Windows).
+	**redis-cli.exe**
 	
 	Veja este vídeo caso tenha alguma dúvida na isntalacao: https://www.youtube.com/watch?v=Pdapt2PFidE
 	
-- Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo ** redis.windows.exe ** 
+- Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo** redis.windows.exe** 
 
-	** Na sessao ####### SNAPSHOTTING ####### ** 
+	Na sessao **####### SNAPSHOTTING #######** 
 	
-	acrescentar o caracter **#** antes das palavras ** save **.
+	acrescentar o caracter **#** antes das palavras **save**.
 	
 	** #save 900 1 **
 	** #save 300 10 **
