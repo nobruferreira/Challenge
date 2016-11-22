@@ -29,7 +29,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 	Na sessao **####### SNAPSHOTTING #######** 
 	
-	acrescentar o caracter **#** antes das palavras **save**.
+	acrescentar o caracter **#** nas seguintes linhas antes da palavras **save**.
 	
 	**#save 900 1**
 	
@@ -37,7 +37,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 	
 	**#save 60 10000**
 	
-- Isto fará com que o armazenamento em cash seja habilitado. Após realizar estes passos execute novamente o arquivo **redis-cli.exe**, para que as alteracoes sejam aplicadas 
+- Isto fará com que o armazenamento em cash seja habilitado. Após realizar estes passos execute novamente o arquivo **redis-cli.exe**, para que as alteracoes sejam aplicadas. 
 
 - Com o Redis executando normalmente dentro de seu sistema operacional, o mesmo poderá ser consumido dentro do C# a partir da API **"NServiceKit.Redis"**, baixada via NuGet.
 
