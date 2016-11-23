@@ -16,18 +16,17 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 - Estrutura em camadas, separação de responsabilidades, injeção de dependência, entre outros conceitos de SOLID e DDD.
 
-- Uso do Banco de Dados Redis(NoSql), que possui a responsabilidade do armazenamento em cache dos dados em memória dentro da aplicação. Contudo para que seja possível executar esta aplicacao em uma máquina local, será necessário realizar a instalacao do Redis, descompactar seu pacote e inicializar os aplicativos mencionados abaixo partir de qualquer pasta dentro do sitema operacional que neste caso está sendo utilizado o Windows.
+- Uso do Banco de Dados Redis(NoSql), que possui a responsabilidade do armazenamento em cache dos dados em memória dentro da aplicação. Contudo para que seja possível executar esta aplicação em uma máquina local, será necessário realizar a instalação do Redis, a partir deste site: http://redis.io/download, descompactar seu pacote e inicializar os aplicativos mencionados abaixo em qualquer pasta dentro do sistema operacional que neste caso está sendo utilizado o Windows.
 	
 	**redis-server.exe** (funcionará em memória dentro do Windows).
 	
 	**redis-cli.exe**
 	
-	Veja este vídeo caso tenha alguma dúvida na instalacao: https://www.youtube.com/watch?v=Pdapt2PFidE
+	Veja este vídeo caso tenha alguma dúvida na instalacao do Redis: https://www.youtube.com/watch?v=Pdapt2PFidE
 	
-- Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo
-**redis.windows.exe** 
-
-	Na sessao **####### SNAPSHOTTING #######** 
+- Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo de configuração **redis.windows.conf**:
+ 
+	Na sessão **####### SNAPSHOTTING #######** 
 	
 	acrescentar o caracter **#** nas seguintes linhas antes da palavra **save**.
 	
@@ -37,7 +36,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 	
 	**#save 60 10000**
 	
-- Isto fará com que o armazenamento em cash seja habilitado. Após realizar estes passos execute novamente o arquivo **redis-cli.exe**, para que as alteracoes sejam aplicadas. 
+- Isto fará com que somente o armazenamento em cash seja habilitado, pois por padrão já vem habilitado o armazenamento em cache(memória) em sincronismo com o banco de dados(disco / IO). Após realizar estes passos, encerre e execute novamente o arquivo **redis-cli.exe**, apenas para certificar que as alterações foram realmente aplicadas. 
 
 - Com o Redis executando normalmente dentro de seu sistema operacional, o mesmo poderá ser consumido dentro do C# a partir da API **"NServiceKit.Redis"**, baixada via NuGet.
 
