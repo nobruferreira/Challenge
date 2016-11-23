@@ -38,7 +38,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 	
 	Estas linhas significam: Quero sincronizar meu banco de dados com meu cache em **"x" segundos**, em relação ao número de **"x" transações** realizadas. 
 	
-- Isto fará com que somente o armazenamento em cache seja habilitado, pois por padrão já vem habilitado o armazenamento em cache(memória) em sincronismo com o banco de dados(disco/IO) levando em questao o tempo juntamente com o número de transacoes. Após realizar estes passos, encerre e execute novamente o arquivo **redis-cli.exe**, apenas para certificar que as alterações foram realmente aplicadas. 
+- Isto fará com que somente o armazenamento em cache seja habilitado, pois por padrão já vem habilitado o armazenamento em cache(memória) em sincronismo com o banco de dados(disco/IO) levando em questao o tempo juntamente com o número de transações. 
 
 - Com o Redis executando normalmente dentro de seu sistema operacional, o mesmo poderá ser consumido dentro do C# a partir da API **"NServiceKit.Redis"**, baixada via NuGet.
 
