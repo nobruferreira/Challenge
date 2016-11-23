@@ -57,4 +57,12 @@ Aplicação publicada na Amazon, e disponível a partir dos seguintes links:
 
 ## REFERÊNCIAS
 
+- https://angular-ui.github.io/bootstrap/
+- http://getbootstrap.com/
+- http://bootswatch.com/
+- https://bower.io/
+- https://developer.marvel.com/
+- http://redis.io/download
+- https://www.youtube.com/watch?v=Pdapt2PFidE
 - https://www.youtube.com/watch?v=58tazVSghA8
+- https://www.postsharp.net/
