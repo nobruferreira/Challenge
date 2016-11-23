@@ -53,4 +53,8 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 Aplicação publicada na Amazon, e disponível a partir dos seguintes links:
 
 - WEB:
-- API: 
+- API:
+
+## REFERÊNCIAS
+
+- https://www.youtube.com/watch?v=58tazVSghA8
