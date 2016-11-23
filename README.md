@@ -16,13 +16,13 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 - Estrutura em camadas, separação de responsabilidades, injeção de dependência, entre outros conceitos de SOLID e DDD.
 
-- Uso do Banco de Dados Redis(NoSql), que possui a responsabilidade do armazenamento em cache dos dados em memória dentro da aplicação. Contudo para que seja possível executar esta aplicação em uma máquina local, será necessário realizar a instalação do Redis, a partir deste site: http://redis.io/download, descompactar seu pacote e inicializar os aplicativos mencionados abaixo em qualquer pasta dentro do sistema operacional que neste caso está sendo utilizado o Windows.
+- Uso do Banco de Dados Redis(NoSql), que possui a responsabilidade do armazenamento em cache dos dados em memória dentro da aplicação. Contudo para que seja possível executar esta aplicação em uma máquina local, será necessário realizar a instalação do Redis, a partir do site: http://redis.io/download, descompactar seu pacote e inicializar os aplicativos mencionados abaixo em qualquer pasta dentro do sistema operacional que neste caso está sendo utilizado o Windows.
 	
 	**redis-server.exe** (funcionará em memória dentro do Windows).
 	
 	**redis-cli.exe**
 	
-	Veja este vídeo caso tenha alguma dúvida na instalacao do Redis: https://www.youtube.com/watch?v=Pdapt2PFidE
+	Veja este vídeo caso tenha alguma dúvida na instalação do Redis: https://www.youtube.com/watch?v=Pdapt2PFidE
 	
 - Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo de configuração **redis.windows.conf**:
  
