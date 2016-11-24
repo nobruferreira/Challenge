@@ -53,7 +53,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 Aplicação publicada na Amazon, e disponível a partir dos seguintes links:
 
 - WEB:
-- API: http://ec2-35-164-126-202.us-west-2.compute.amazonaws.com/ChallengeApi/
+- API: 
 
 ## REFERÊNCIAS
 
