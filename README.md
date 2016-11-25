@@ -10,7 +10,7 @@ De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, paco
 
 - Pacotes Web baixados via Bower.
 
-- Assumindo que o usuário já possui cadastro efetuado na Marvel Comics Api, link: **https://marvel.com/register?referer=http%3A%2F%2Fmarvel.com%2Fcomics**, para que seja possível realizar a autenticação nesta aplicação, onde são solicitadas as chaves PRIVATE_KEY e PUBLIC_KEY, as mesmas poderão ser encontradas
+- Assumindo que o usuário já possui cadastro efetuado na Marvel Comics Api, link: **https://marvel.com/register?referer=http%3A%2F%2Fmarvel.com%2Fcomics**, para que seja possível realizar a autenticação nesta aplicação, onde são solicitadas as chaves **PRIVATE_KEY** e **PUBLIC_KEY**, as mesmas poderão ser encontradas
 na aba **My Developer Account** a partir do link **https://developer.marvel.com/account**
 
 - Com isso, favor entrar com as chaves mencionadas, para que a autenticação dentro desta aplicação(Challenge - MarvelApi) seja realizada com sucesso.
