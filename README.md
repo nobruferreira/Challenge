@@ -1,6 +1,6 @@
 # Challenge
 
-Solução desenvolvida a partir do .NET Framework 4.6.1 - Visual Studio 2015, com a finalidade de consumir e exibir dados a partir da Api Marvel Comics, que disponibiliza para desenvolvedores do mundo inteiro, o acesso a informações referente uma vasta biblioteca de quadrinhos de Super Heróis da Marvel que foi criada a 70 anos atrás.
+Solução desenvolvida a partir do .NET Framework 4.6.1 - Visual Studio 2015, com a finalidade de consumir e exibir dados a partir da Api Marvel Comics(link: https://developer.marvel.com/), que disponibiliza para desenvolvedores do mundo inteiro, o acesso a informações referente uma vasta biblioteca de quadrinhos de Super Heróis da Marvel que foi criada a 70 anos atrás.
 
 De modo resumido, abaixo seguem alguns dos principais conceitos, técnicas, pacotes e tecnologias utilizadas/aplicadas neste projeto: 
 
