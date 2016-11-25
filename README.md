@@ -70,3 +70,4 @@ Aplicação publicada na Amazon, porém com seu armazenamento em cache desabilit
 - https://www.youtube.com/watch?v=Pdapt2PFidE
 - https://www.youtube.com/watch?v=58tazVSghA8
 - https://www.postsharp.net/
+- https://aws.amazon.com/pt/
