@@ -57,7 +57,7 @@ na aba **My Developer Account** a partir do link **https://developer.marvel.com/
 
 Aplicação publicada na Amazon, porém com seu armazenamento em cache desabilitado atualmente. Segue o link:
 
-- WEB: **http://35.162.85.6/ChallengeWeb/#/login**
+- **WEB:** **http://35.162.85.6/ChallengeWeb/#/login**
 
 ## REFERÊNCIAS
 
