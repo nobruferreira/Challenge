@@ -31,7 +31,7 @@ na aba **My Developer Account** a partir do link **https://developer.marvel.com/
 	
 - Para que o Redis trabalhe com o armazenamento em cash no Windows, será necessário comentar as seguintes linhas dentro do arquivo de configuração **redis.windows.conf**:
  
-	Na sessão: **####### SNAPSHOTTING #######** 
+	Na sessão **####### SNAPSHOTTING #######** 
 	
 	acrescentar o caracter **#** nas seguintes linhas antes da palavra **save**.
 	
